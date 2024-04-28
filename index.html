@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand">Library</div>
+      <div class="user">Ankit's Library</div>
+    </header>
+    <main>
+      <button class="add-book" type="button">+ Add Book</button>
+      <div class="book-container"></div>
+    </main>
+    <dialog id="book-dialog">
+      <form class="new-book-from">
+        <h1>Add New Book</h1>
+        <div>
+          <label for="title">Title</label>
+          <input
+            required
+            type="text"
+            name="title"
+            placeholder="Ex. Atomic Habits"
+            id="title"
+            autofocus
+          />
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input
+            required
+            type="text"
+            name="author"
+            placeholder="James Clear"
+            id="author"
+          />
+        </div>
+        <div>
+          <label for="pages">Number of Pages</label>
+          <input
+            required
+            type="number"
+            name="pages"
+            placeholder="215"
+            id="pages"
+          />
+        </div>
+        <div>
+          <label for="read">Have Read?</label>
+          <input type="checkbox" name="read" id="read" />
+        </div>
+        <button class="cancel">Cancel</button>
+        <button type="submit" id="confirmBtn">Confirm</button>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
