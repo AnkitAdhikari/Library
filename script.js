@@ -1,4 +1,7 @@
 'use strict'
+class Library {
+    // starting class implementation
+}
 const newBookform = document.querySelector(".new-book-from")
 const addBookBtn = document.querySelector('.add-book');
 const submitBtn = document.getElementById('confirmBtn');
